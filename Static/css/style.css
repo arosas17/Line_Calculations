@@ -1,0 +1,155 @@
+body {
+  background-color: #ffc343;
+  height: 1100px ;
+}
+
+p {
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  height: 50px;
+  width: 175px;
+}
+
+label{
+ color: #000000;
+}
+
+select {
+  height: 30px;
+  width: 100px;
+}
+
+li input {
+  height: 30px;
+  width: 100px;
+}
+
+.list-group-item {
+  background-color: #277e94;
+  border: 2px solid #000000;
+  width: 185px;
+}
+
+.table-striped {
+  position: relative;
+  top: 100px;
+  overflow-y: auto;
+  height: 300px;
+  width: 870px;
+}
+
+.table-striped thead th {
+  position: sticky;
+  top: -1px;
+  box-shadow: inset 0 2px 0 #000000, inset 0 -2px 0 #000000;
+}
+
+h3 {
+  position: relative;
+  top: 100px;
+
+}
+table {
+  border-collapse: collapse;        
+  border-spacing: 0;
+  width: 100%;
+}
+
+td {
+  padding: 8px 5px;
+  border: 2px solid #090b11;
+  color: black;
+}
+th {
+  text-align: center;
+  background-color: #bec1c2;
+  font-weight: bold;
+  padding: 8px 5px;
+  border: 2px solid #000000;
+}
+
+.left-cell {
+  width: 150px;
+}
+
+#calTable {
+  width: 300px;
+  position:absolute;
+  top: 25px;
+  left: 250px; 
+}
+
+
+#calBody {
+  background-color: white;
+}
+
+#changeVal {
+  position:absolute;
+  top: 650px;
+  left: 25px; 
+}
+
+#delRow {
+  position:absolute;
+  top: 725px;
+  left: 25px; 
+}
+
+#calculateBtn {
+  position:absolute;
+  top: 800px;
+  left: 25px; 
+}
+
+#excelDownload1 {
+  position:absolute;
+  top: 650px;
+  left: 225px; 
+}
+
+#excelDownload2 {
+  position:absolute;
+  top: 725px;
+  left: 225px; 
+}
+
+#excelDownload3 {
+  position:absolute;
+  top: 800px;
+  left: 225px; 
+}
+
+.container {
+  width: 250px;
+  left: -692px;
+  top: -556px;
+  position: relative;
+}
+
+.mt-5 {
+  position: relative;
+  width: 870px;
+  left: 680px;
+  top: -1050px;
+}
+
+.mt-5 tr.selected {
+  background-color: rgb(207, 86, 86);
+}
+.mt-5 tr:nth-child(even):not(.selected) {
+  background-color: rgb(224, 212, 212);
+}
+.mt-5 tr:nth-child(odd):not(.selected) {
+  background-color: white;
+}
+
+
+.page-wrap {
+  height: 1000px;
+  width: 2100px;
+  margin: 0 auto;
+  }

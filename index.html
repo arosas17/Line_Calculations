@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filler Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Static/css/style.css">
+  <link rel="icon" href="Static/images/poke.jpg">
+  <script src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<div class="page-wrap">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <form class = "bg-dark">
+        
+          <p>Filter Search</p>
+              <ul class="list-group">
+
+                <li class="list-group-item">
+                  <label for="year">Enter Year</label><br>
+                  <input type="text" class="filter" placeholder="2023" id="Year">
+                </li>
+
+                <li class="list-group-item">
+                  <label for="month">Enter Month</label><br>
+                    <input type="text" placeholder="6" id="Month">
+                </li>
+
+              </ul>
+            <button type="button" id="filterButton">Filter</button><br><br><br>
+
+            <p>Change Value</p>
+            <ul class="list-group">
+
+              <li class="list-group-item">
+                <label for="line">Select Line Number</label><br>
+                <select class="filter" id="lineChangeValue"></select><br>
+              </li>
+
+              <li class="list-group-item">
+                <label for="column">Select Column Header</label><br>
+                <select class="filter" id="columnChange"></select><br>
+              </li>
+
+              <li class="list-group-item">
+                <label for="index">Enter Index</label><br>
+                <input type="text" class="filter" placeholder="1" id="indexChange">
+              </li>
+
+
+
+              <li class="list-group-item bg-dark">
+                <label for="newValue">Enter New Value</label><br>
+                  <input type="text" placeholder="Enter Value" id="valueChange">
+              </li>
+
+            </ul>
+
+
+
+            <button type="button" id="changeVal">Change Value</button><br><br><br>
+
+            <button type="button" id="delRow">Delete Rows</button><br><br><br>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+
+            <button type="button" id="excelDownload1">Download Table: Line 1</button>
+
+            <button type="button" id="excelDownload2">Download Table: Line 2</button>
+
+            <button type="button" id="excelDownload3">Download Table: Line 3</button>
+
+
+            
+      </form>
+    </div>
+  </div>
+</div>    
+  <div class="container">
+    <div class="card">
+      <div class="card-header"><b>Select Line 1 Excel File</b></div>
+      <div class="card-body">
+
+        <input type="file" id="excel_file1"><br>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><b>Select Line 2 Excel File</b></div>
+      <div class="card-body">
+
+        <input type="file" id="excel_file2"><br>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><b>Select Line 3 Excel File</b></div>
+      <div class="card-body">
+
+        <input type="file" id="excel_file3"><br>
+
+      </div>
+    </div>
+  </div>
+    <table id="calTable">
+      <thead id='calHead'>
+        <tr>
+          <th colspan = "2">Monthly LLD Overview</th>
+        </tr>
+      </thead>
+
+      <tbody id="calBody">
+        <tr>
+          <td class = "left-cell">Line 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class = "left-cell">Line 2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class = "left-cell">Line 3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class = "left-cell">Weighted Average</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div id="excel_table1" class="mt-5"></div>
+    <div id="excel_table2" class="mt-5"></div>
+    <div id="excel_table3" class="mt-5"></div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>
